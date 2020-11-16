@@ -1,0 +1,263 @@
+
+ :root { 
+  --text-color-black: #212121;
+  --text-color-grey: #757575;
+  --text-color-white: #FFFFFF;
+  --accent-color: #2196F3;
+  --bt-primary: #F5F4FA;
+  --bt-second: #2196F3;
+  --block-color: #F5F4FA;
+  --color-footer: #2F303A;
+ }
+
+ .page {
+    color: var(--text-color-black);
+    font-family: Roboto, sans-serif;
+}
+
+ul {
+    list-style: none;
+  }
+a {
+  text-decoration: none;
+}
+
+  .logo {
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    
+}
+  .logo span{
+    color: #000000;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+ /* ЛОГОТИП в футере */
+
+.logo-foot {
+  color: #2196F3;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-foot span{
+  font-size: 26px;
+  line-height: 1.19;
+}
+/* header nav PORTFOLIO*/
+  
+  .site-nav a{
+   color: var(--text-color-black);
+  }
+   
+  .nav {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.143;
+  }
+
+  .site-nav a:hover,
+  .site-nav a:focus {
+      color: #2196F3;
+  } 
+ 
+  /* подсвечивается активная  СТАНИЦА сейчас, где находимся */
+  .site-nav .link.current {
+    color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+  }
+
+  .auth-nav a{
+   color: var(--text-color-grey);
+}
+  .auth-nav a:hover,
+  .auth-nav a:focus {
+    color: #2196F3;
+  }
+
+.portfolio-filter button:hover,
+.portfolio-filter button:focus {
+    color: #FFFFFF;
+    background-color: var(--bt-second);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+}
+
+/* main portfolio*/
+.portfolio-card p {
+  color: var(--text-color-grey);
+}
+
+.portfolio-card h3{
+  color: var(--text-color-black);
+  font-size: 18px;
+  line-height: 1,11;
+  letter-spacing: 0.06em;
+}
+
+/* footer */
+.footer {
+  background-color: var(--color-footer);
+}
+
+.info-studio a,span{
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1,71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: normal;
+
+}
+.info-studio a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1,71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* index  он же STUDIO */
+
+.mainweb {
+  background-color: var(--color-footer);
+}
+
+ h1 {
+   color: var(--text-color-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1,36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+ }
+
+ .btn {
+  color: var(--text-color-white);
+  background-color: var(--accent-color);
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+ }
+
+.list h3 {
+  color: var(--text-color-black);
+  font-size: 16px;
+  line-height: 1.188;
+ }
+
+ .list p {
+   color: var(--text-color-grey);
+   font-size: 16px;
+   line-height: 1.188;
+ }
+
+ h2 {
+   color: var(--text-color-black);
+   font-style: normal;
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 1,67;
+   text-align: center;
+   letter-spacing: 0.03em;
+ }
+
+ .box-one {
+  width: 370px;
+  height: 294px;
+  left: 215px;
+  top: 1061px;  
+ }
+
+.box-two {
+  width: 370px;
+  height: 294px;
+  left: 615px;
+  top: 1061px;
+}
+
+.box-three {
+  width: 370px;
+  height: 294px;
+  left: 1015px;
+  top: 1061px;
+}
+
+.team  {
+  background-color: var(--block-color);
+}
+
+.team-designer{
+  background-color: var(--text-color-white);
+  width: 270px;
+  height: 368px;
+  left: 215px;
+  top: 1635px;
+}
+
+.designer {
+  width: 270px;
+  height: 260px;
+  left: 215px;
+  top: 1635px;
+}
+
+.team-developer {
+  background-color: var(--text-color-white);
+  width: 270px;
+  height: 368px;
+  left: 515px;
+  top: 1635px;
+}
+.developer {
+  width: 270px;
+  height: 260px;
+  left: 515px;
+  top: 1635px;
+}
+
+.team-marketing {
+  background-color: var(--text-color-white);
+  width: 270px;
+  height: 368px;
+  left: 815px;
+  top: 1635px;
+}
+ .marketing {
+  width: 270px;
+  height: 260px;
+  left: 815px;
+  top: 1635px;
+ }
+
+ .team-ui {
+   background-color: var(--text-color-white);
+  width: 270px;
+  height: 368px;
+  left: 1115px;
+  top: 1635px;
+ }
+ .ui {
+
+  width: 270px;
+  height: 260px;
+  left: 1115px;
+  top: 1635px;
+ }
