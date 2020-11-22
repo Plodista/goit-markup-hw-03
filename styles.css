@@ -10,37 +10,71 @@
   --color-footer: #2F303A;
  }
 
+ /* text-align: center; -выравнивает текстовые элементы по центру */
+
+ /* h1.
+  h2.
+  h3 {
+   margin-top: 0; сбрасиваем нужные отступы всем h
+ } */
  /* !ЗАДАЕМ ВСЕМ элементам box-sizing: border-box, кому надо унаследуйте его! */
  html {
   box-sizing: border-box;
 }
 
 *, *::before, *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
  body {
     color: var(--text-color-black);
     font-family: Roboto, sans-serif;
+    width: 1600px;
+    margin: 0;
 }
- html {
-   width: 1230px;
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+   padding-right: 15px;
+   margin-right: 200px;
+   margin-left: 200px;
+
+}
+
+ /* html {
+   
    padding-left: 15px;
    padding-right: 15px;
-  }
+  } */
+
 
   /* убрали в списках точки */
 ul {
     list-style: none;
   }
   /* убралив ссылках подчеркивание.лучше убирать точечнов нужном месте.
-   не задават всем */
+   не задават всем МОЖНО ПЕРЕНЕСТИ В МОДЕРН -НОРМАЛАЙЗ */
 a {
   text-decoration: none;
 }
 
+/************** id-идендтификатор hedera-#headre
+justify-content: space-between; -распределение ылементов по горизонтали*****/
+   #header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 1170px;
+     height: 80px;
+     margin-left: 215px;
+     margin-right: 215px;
+   }
+
   .logo {
     color: var(--accent-color);
+    display: inline-block;
+    /* display: flex; */
     margin-top: 0;
     margin-bottom: 0;
     font-family: Raleway;
@@ -49,6 +83,10 @@ a {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-right: 93px;
+
     
 }
   .logo span{
@@ -65,8 +103,8 @@ a {
  .logo-foot {
   font-family: Raleway;
   display: inline-block;
-    margin-top: 0;
-    margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #2196F3;
   font-size: 26px;
   line-height: 1.19;
@@ -129,28 +167,32 @@ a {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
-    width: 294px;
-    height: 16px;
+    /* width: 294px;
+    height: 16px; */
    }
 
    .auth-nav {
     display: flex;
-    margin-top: 0;
+    /* margin-top: 55px; */
     margin-bottom: 0;
     padding-left: 0;
+    margin-top: 0;
    }
 
+   .nav {
+     display: inline-block;
+     display: flex;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: 1.143;
+     width: 932px;
+     justify-content: space-between;
+   }
    .nav-portf {
      padding-right: 50px;
      padding-left: 50px;
    }
 
-  .nav {
-    display: inline-block;
-   font-weight: 500;
-   font-size: 14px;
-   line-height: 1.143;
-  }
 
   .nav-mailo {
     padding-right: 50px;
@@ -173,7 +215,7 @@ a {
 
   .auth-nav a{
    color: var(--text-color-grey);
-}
+ }
   .auth-nav a:hover,
   .auth-nav a:focus {
     color: #2196F3;
@@ -207,35 +249,61 @@ a {
   height: 38px;
   margin-right: 8px;
   font-weight: 500;
-font-size: 16px;
-line-height: 26px;
+  font-size: 16px;
+  line-height: 1.63;
+  border-radius: 4px;
+  border-color: transparent;
  }
  .veb {
   width: 128px;
   height: 38px;
   margin-right: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  border-radius: 4px;
+  border-color: transparent;
+  
  }
  .pri {
   width: 145px;
   height: 38px;
   margin-right: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  border-radius: 4px;
+  border-color: transparent;
  }
  .diz {
   width: 103px;
   height: 38px;
   margin-right: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  border-radius: 4px;
+  border-color: transparent;
  }
 .mark {
   width: 130px;
   height: 38px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  border-radius: 4px;
+  border-color: transparent;
 }
-.portfolio-filter {
 
+.portfolio-filter {
   display: flex;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  
 }
+
+
 
 /************* index  он же STUDIO******************* */
 
@@ -243,6 +311,7 @@ line-height: 26px;
    background-color: var(--color-footer);
     width: 1600px;
     height: 600px;
+    text-align: center;
 }
 
  h1 {
@@ -266,16 +335,13 @@ line-height: 26px;
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.88;
-  text-align: center;
   letter-spacing: 0.06em;
   margin-top: 30px;
-  margin-left: 700px;
   border: #000000;
  }
 
  /*********** перечень .list  ***************/
  .list {
-   width: 1170px;
    margin-top: 94px;
    margin-bottom: 94px;
  }
@@ -286,6 +352,8 @@ line-height: 26px;
    margin-top: 0;
    margin-bottom: 0;
    padding-left: 0;
+   background-color: yellow;
+   justify-content: center;
  }
 
 .list-item h3 {
@@ -321,8 +389,8 @@ line-height: 26px;
 /*********** box  с картинками Studio (index) ************/
   .work {
     outline: 2px solid tomato;
-    width: 1170px;
-   height: 386px
+   height: 386px;
+   margin-bottom: 94px;
   }
 
 .work-box {
@@ -389,12 +457,12 @@ line-height: 26px;
    margin-top: 94px;
 }
 
-.team-all {
-width: 1170px;
-margin-top: 0;
-margin-bottom: 0;
-padding-left: 0;
-}
+  .team-all {
+  width: 1170px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  }
 
 .team-designer{
   background-color: var(--text-color-white);
