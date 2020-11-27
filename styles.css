@@ -40,8 +40,8 @@
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
   /* убрали в списках точки */
