@@ -29,7 +29,7 @@
  body {
   color: var(--text-color-black);
   font-family: Roboto, sans-serif;
-  width: 1600px;
+  /* width: 1600px; */
   margin: 0;
 }
 
@@ -125,7 +125,7 @@ justify-content: space-between; -распределение ылементов �
    /************ footer*************8 */
 .footer {
   background-color: var(--color-footer);
-  width: 1600px;
+  /* width: 1600px; */
   height: 252px;
 }
 .info-studio {
@@ -488,13 +488,13 @@ height: 21px;
 /************Наша команда блок **************/
 .team  {
   background-color: var(--block-color);
-  /* width: 1600px; */
+  /* width: 1600px;
   width: auto;
   margin-top: 0;
   margin-bottom: 0;
   display: inline-block;
   align-items: center;
-  height: 648px;
+  height: 648px; */
   
 }
 
