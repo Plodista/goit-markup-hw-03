@@ -60,7 +60,8 @@ justify-content: space-between; -распределение ылементов �
    display: flex;
    justify-content: space-between;
    align-items: center;
-   max-width: 1600px;
+   /* width: 1600px; */
+   width: auto;
    height: 80px;
    padding-left: 215px;
    padding-right: 215px;
@@ -353,7 +354,8 @@ height: 21px;
 
 .mainweb {
   background-color: var(--color-footer);
-  width: 1600px;
+  /* width: 1600px; */
+  width: auto;
   height: 600px;
   text-align: center;
 }
@@ -486,7 +488,8 @@ height: 21px;
 /************Наша команда блок **************/
 .team  {
   background-color: var(--block-color);
-  width: 1600px;
+  /* width: 1600px; */
+  width: auto;
   margin-top: 0;
   margin-bottom: 0;
   display: inline-block;
