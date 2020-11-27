@@ -55,38 +55,34 @@ a {
 }
 
 /************** id-идендтификатор hedera-#headre
-justify-content: space-between; -распределение ылементов по горизонтали*****/
+justify-content: space-between; -распределение элементов по горизонтали*****/
   #header {
    display: flex;
-   justify-content: space-between;
+   /* justify-content: space-between; */
    align-items: center;
-   /* width: 1600px; */
    width: auto;
    height: 80px;
    border: 1px solid #ECECEC;
+   padding-left: 215px;
+   padding-right: 215px;
 }
 
 .logo {
    color: var(--accent-color);
    display: inline-block;
-   margin-top: 0;
-   margin-bottom: 0;
    font-family: Raleway;
-   width: 155px;
+   min-width: 155px;
    height: 31px;
-   /* font-style: normal;
-   font-weight: bold; */
    font-size: 26px;
    line-height: 1.19;
    letter-spacing: 0.03em;
    margin-top: 24px;
    margin-bottom: 25px;
    margin-right: 93px;   
+
 }
 .logo span{
    color: #000000;
-   /* font-style: normal;
-   font-weight: bold; */
    font-size: 26px;
    line-height: 1.19;
    letter-spacing: 0.03em;
@@ -106,7 +102,6 @@ justify-content: space-between; -распределение ылементов �
   padding-right: auto;
   padding-bottom: 20px;
   width: 145px;
-  /* padding-left: 215px; */
 }
 
 .logo-foot span, .logo-span{
@@ -160,7 +155,8 @@ justify-content: space-between; -распределение ылементов �
 width: 231px;
 height: 21px;
 }
-/********* header nav PORTFOLIO***************/
+
+/********* ШАПКА header nav PORTFOLIO***************/
   
 .site-nav a{
   color: var(--text-color-black);
@@ -185,7 +181,7 @@ height: 21px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
-  width: 932px;
+  width: 1050px;
   justify-content: space-between;
 }
 
@@ -394,6 +390,13 @@ height: 21px;
    margin-bottom: 94px;
  }
 
+ .list li {
+   margin-right: 30px;
+ }
+ .list li:last-child {
+   margin-right: 0px;
+ }
+
  .list-item {
    /* display: inline-block; */
    display: flex;
@@ -401,7 +404,7 @@ height: 21px;
    margin-bottom: 0;
    padding-left: 0;
    /* background-color: yellow; */
-   justify-content: center;
+   /* justify-content: center; */
  }
 
 .list-item h3 {
@@ -439,6 +442,8 @@ height: 21px;
   /* outline: 2px solid tomato; */
   height: 386px;
   margin-bottom: 94px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .work-box {
@@ -489,14 +494,6 @@ height: 21px;
 /************Наша команда блок **************/
 .team  {
   background-color: var(--block-color);
-  /* width: 1600px;
-  width: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  display: inline-block;
-  align-items: center;
-  height: 648px; */
-  
 }
 
 .team h2 {
@@ -511,7 +508,8 @@ height: 21px;
 
   .team-all {
   margin-top: 0;
-  margin-bottom: 0;
+  padding-bottom: 94px;
+ margin-bottom: 0;
   padding-left: 0;
   display: flex;
   justify-content: space-between;
