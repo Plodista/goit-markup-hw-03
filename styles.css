@@ -372,6 +372,18 @@ height: 21px;
 
 .hero {
   background-color: var(--color-footer);
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  /* background-image: url(./images/Imgheader.jpg); */
+   /* при изменении рр раб.страницы,картинка будет по центру */
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-image: linear-gradient( 
+    to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(./images/Imgheader.jpg);
 }
 
 h1 {
@@ -440,20 +452,36 @@ h1 {
   letter-spacing: 0.03em;
  }
 
-  .list-ett,
-  .list-pun,
-  .list-pln,
-  .list-teh {
+  .list-ett {
     width: 270px;
-    height: 101px;
+    height: 251px;
   }
 
+.list-ett::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+
+.icon-ant::before {
+  background-image: url(./images/anten.png);
+  background-size: 70px;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+}
 
 /*********** box  с картинками Studio (index) ************/
 .work {
   display: flex;
   padding-bottom: 94px;
-  /* outline: 2px solid tomato; */
   margin-right: auto;
   margin-left: auto;
 }
